@@ -26,6 +26,8 @@ public class LinkedList {
         this._length++;
     }
 
+    // Elimina el ultimo nodo de la lista.
+
     public void removeLastNode() {
         if(this.head == null) {
             return;
@@ -56,6 +58,7 @@ public class LinkedList {
 
         Node current = this.head;
         String toPrint = "";
+
         while(current != null) {
             toPrint += current.getData() + " => ";
             current = current.getNext();
