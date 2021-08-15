@@ -49,6 +49,18 @@ public class LinkedList {
 
     }
 
+    public int indexOf(int data) {
+        if(this.head == null) return -1;
+        int counter = 0;
+        Node current = this.head;
+        while(counter < this._length) {
+            if(current.getData() == data) return counter;
+            counter++;
+            current = current.getNext();
+        }
+    return -1;
+    }
+
     public int get_length() {
         return _length;
     }
