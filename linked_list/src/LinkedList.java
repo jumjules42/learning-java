@@ -49,6 +49,7 @@ public class LinkedList {
 
     }
 
+    // Devuelve la posicion del primer elemento que coincida con el que se busca.
     public int indexOf(int data) {
         if(this.head == null) return -1;
         int counter = 0;
